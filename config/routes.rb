@@ -1,4 +1,22 @@
 SupremeLaserArcticMoose::Application.routes.draw do
+  get "memberships/new"
+
+  get "memberships/create"
+
+  get "memberships/index"
+
+  get "membership/new"
+
+  get "membership/create"
+
+  get "membership/index"
+
+  resources :events
+
+  resources :memberships
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

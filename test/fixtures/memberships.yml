@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dayslot: 1
+  dayhalf: 1
+  timeslot: 
+  user: 
+  event: 
+
+two:
+  dayslot: 1
+  dayhalf: 1
+  timeslot: 
+  user: 
+  event: 

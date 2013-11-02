@@ -1,0 +1,18 @@
+<%= form_for(@membership) do |f| %>
+
+    <div class="field">
+      <%= f.label :dayhalf %><br />
+      <%= f.text_field :dayhalf %>
+    </div>
+    <div class="field">
+      <%= f.label :dayslot %><br />
+      <%= f.text_field :dayslot %>
+    </div>
+    <div class="field">
+      <%= f.label :timeslot %><br />
+      <%= f.text_field :timeslot %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
