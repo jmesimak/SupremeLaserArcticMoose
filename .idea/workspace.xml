@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f325df0c-a892-4d15-9f46-4969a7c273fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/events/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/core.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberships/create.html.erb" afterPath="$PROJECT_DIR$/app/views/memberships/create.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberships/new.html.erb" afterPath="$PROJECT_DIR$/app/views/memberships/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
     </list>
@@ -16,15 +15,15 @@
     <file path="/event.rb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383382111390" ignored="false" />
     <file path="/membership.rb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383381870746" ignored="false" />
     <file path="/memberships_controller.rb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383396606662" ignored="false" />
-    <file path="/_form.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383383038908" ignored="false" />
-    <file path="/new.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383399035364" ignored="false" />
+    <file path="/_form.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383401581072" ignored="false" />
+    <file path="/new.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383399918089" ignored="false" />
     <file path="/routes.rb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383384092414" ignored="false" />
     <file path="/application.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383397468208" ignored="false" />
     <file path="/application.css" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383384835527" ignored="false" />
-    <file path="/scaffolds.css.scss" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383398329061" ignored="false" />
+    <file path="/scaffolds.css.scss" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383401700318" ignored="false" />
     <file path="/show.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383389232196" ignored="false" />
     <file path="/home.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383388300147" ignored="false" />
-    <file path="/core.js" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383398547963" ignored="false" />
+    <file path="/core.js" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383400350372" ignored="false" />
     <file path="/create.html.erb" changelist="f325df0c-a892-4d15-9f46-4969a7c273fe" time="1383397556545" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +44,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/memberships/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="781" selection-end="781" vertical-scroll-proportion="0.14802632">
+            <state line="23" column="209" selection-start="2738" selection-end="2738" vertical-scroll-proportion="-14.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/events/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberships/_form.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/events/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="416" selection-end="425" vertical-scroll-proportion="-10.625">
+            <state line="22" column="31" selection-start="589" selection-end="589" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
@@ -66,7 +74,7 @@
       <file leaf-file-name="core.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="59" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="21" column="67" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,19 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="12" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/events/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="82" selection-start="220" selection-end="220" vertical-scroll-proportion="-8.125">
+            <state line="16" column="18" selection-start="347" selection-end="347" vertical-scroll-proportion="0.17386723">
               <folding />
             </state>
           </provider>
@@ -155,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/models/membership.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/memberships/_form.html.erb.html" />
@@ -168,9 +166,10 @@
         <option value="$PROJECT_DIR$/app/controllers/memberships_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/memberships/create.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/core.js" />
         <option value="$PROJECT_DIR$/app/views/memberships/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/core.js" />
+        <option value="$PROJECT_DIR$/app/views/events/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
       </list>
     </option>
   </component>
@@ -855,20 +854,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/membership.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home_page.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/events.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -948,23 +933,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="12" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="59" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+        <state line="21" column="67" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberships/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="781" selection-end="781" vertical-scroll-proportion="0.14802632">
+        <state line="23" column="209" selection-start="2738" selection-end="2738" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="31" selection-start="589" selection-end="589" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="347" selection-end="347" vertical-scroll-proportion="0.17386723">
           <folding />
         </state>
       </provider>
