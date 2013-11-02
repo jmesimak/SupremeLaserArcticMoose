@@ -1,8 +1,24 @@
-<ul>
-  <li><a href="/events/new">+</a></li>
-    <% current_user.events.each do |event| %>
-        <li><%= link_to event.name, event %></li>
+<% if current_user %>
+    <% eventz = current_user.events.group(:event_id) %>
+    <% eventz.each do |event| %>
+        <% if ((Time.zone.now - Event.first.created_at) / 1.day).to_i <= 3 %>
+            <article id="eventinfo">
+              <a href="/events/<%= event.id %>">
+                <h1><%= event.name %></h1>
+                <h2>@<%= event.location%></h2>
+              </a>
+            </article>
+        <% end %>
     <% end %>
-  </p>
-</ul>
+
+    <div class="joinbutton">
+      <%= link_to 'Create event', new_event_path %>
+    </div>
+
+<% else %>
+
+
+
+<% end %>
+
 

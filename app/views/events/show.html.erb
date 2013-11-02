@@ -1,25 +1,22 @@
-<p id="notice"><%= notice %></p>
+<section id="eventinfo">
+    <h1><%= @event.name%></h1>
+    <h2>@<%= @event.location%></h2>
+</section>
 
-<p>
-  <b>Name:</b>
-  <%= @event.name %>
-</p>
+<% if @event.memberships.count > 0 %>
+<section id="eventpanel">
+    <div>
+        <h1><%= (@event.created_at + @event.getfav.first.days).strftime("%A") %></h1>
+        <h1><%= @event.getfav.last + 6 %>:00</h1><br>
+    </div>
+</section>
+<% end %>
 
-<p>
-  <b>Location:</b>
-  <%= @event.location %>
-</p>
 
-<p>
+
+<div class="joinbutton">
   <%= link_to 'Join', new_membership_path(:membership => {:event_id => @event.id}) %>
-</p>
-
-<p>
-  <% @event.users.each do |u| %>
-    <p><%= u.email %></p>
-  <% end %>
-</p>
+</div>
 
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+
