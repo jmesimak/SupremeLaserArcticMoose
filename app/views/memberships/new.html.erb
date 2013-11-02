@@ -1,64 +1,41 @@
-<section id=""
-
-<div data-role="page" id="one">
-
-  <div data-role="content" >
-
-    <section>
-      <div data-role="content">
-        <a data-role="button" href="#two">Tänään</a>
-        <a data-role="button" href="#two">Huomenna</a>
-        <a data-role="button" href="#two">Ylihuomenna</a>
-      </div>
-    </section>
-
-  </div><!-- /content -->
-
-</div><!-- /page one -->
 
 
-<!-- Start of second page: #two -->
-<div data-role="page" id="two" data-theme="a">
+<section id="one" class="fs_panel">
+  <a class="panel_button" href="#two" value="1">Tänään</a>
+  <a class="panel_button" href="#two" value="2">Huomenna</a>
+  <a class="panel_button" href="#two" value="3">Ylihuomenna</a>
+</section>
 
-  <div data-role="content" data-theme="a">
-    <section>
-      <div data-role="content">
-        <a data-role="button" href="#three">Aamupäivä</a>
-        <a data-role="button" href="#three">Iltapäivä</a>
-      </div>
-    </section>
+<section id="two" class="fs_panel">
+  <a class="panel_button" href="#three" value="1">Aamupäivä</a>
+  <a class="panel_button" href="#three" value="2">Iltapäivä</a>
+</section>
 
-  </div><!-- /content -->
-
-</div><!-- /page two -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="three" data-theme="a">
-
-  <div data-role="content" data-theme="a">
-    <section>
-      <div data-role="content">
-        <a data-role="button">08:00</a>
-        <a data-role="button">09:00</a>
-        <a data-role="button">10:00</a>
-      </div>
-    </section>
-
-
-  </div><!-- /content -->
-
-</div><!-- /page two -->
+<section id="three" class="fs_panel">
+  <a class="panel_button" href="#" value="1">07:00</a>
+  <a class="panel_button" href="#" value="2">08:00</a>
+  <a class="panel_button" href="#" value="3">09:00</a>
+  <a class="panel_button" href="#" value="4">10:00</a>
+  <a class="panel_button" href="#" value="5">11:00</a>
+</section>
 
 
 
+
+
+<%= form_for(@membership) do |f| %>
+    <%= f.hidden_field :event_id, :value => @membership.event_id %>
+    <%= f.hidden_field :dayslot, :id => "dayslot", :value => "0"%>
+    <%= f.hidden_field :dayhalf, :id => "dayhalf", :value => "0" %>
+    <%= f.hidden_field :timeslot, :id => "timeslot", :value => "0" %>
+<% end %>
 
 
 
 <p>Hah gay: <%= @membership.event_id %></p>
 
 <ul>
-  <li>Tänään: <%= Event.find(1).memberships.where(:dayslot => 1).count %></li>
-  <li>Huomenna: <%= Event.find(1).memberships.where(:dayslot => 2).count %></li>
+  <li>Tänään: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 1).count %></li>
+  <li>Huomenna: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 2).count %></li>
 </ul>
 
-<%= render 'form' %>
