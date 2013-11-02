@@ -1,0 +1,8 @@
+<ul>
+  <li><a href="/events/new">+</a></li>
+    <% current_user.events.each do |event| %>
+        <li><%= link_to event.name, event %></li>
+    <% end %>
+  </p>
+</ul>
+

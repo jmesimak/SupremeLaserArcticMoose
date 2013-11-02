@@ -10,6 +10,16 @@
   <%= @event.location %>
 </p>
 
+<p>
+  <%= link_to 'Join', new_membership_path(:membership => {:event_id => @event.id}) %>
+</p>
+
+<p>
+  <% @event.users.each do |u| %>
+    <p><%= u.email %></p>
+  <% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

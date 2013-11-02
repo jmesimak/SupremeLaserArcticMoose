@@ -1,6 +1,6 @@
 class MembershipsController < ApplicationController
   def new
-    @membership = Membership.new
+    @membership = Membership.new(params[:membership])
   end
 
 

@@ -1,4 +1,64 @@
-<h1>Memberships#new</h1>
-<p>Find me in app/views/memberships/new.html.erb</p>
+<section id=""
+
+<div data-role="page" id="one">
+
+  <div data-role="content" >
+
+    <section>
+      <div data-role="content">
+        <a data-role="button" href="#two">Tänään</a>
+        <a data-role="button" href="#two">Huomenna</a>
+        <a data-role="button" href="#two">Ylihuomenna</a>
+      </div>
+    </section>
+
+  </div><!-- /content -->
+
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+  <div data-role="content" data-theme="a">
+    <section>
+      <div data-role="content">
+        <a data-role="button" href="#three">Aamupäivä</a>
+        <a data-role="button" href="#three">Iltapäivä</a>
+      </div>
+    </section>
+
+  </div><!-- /content -->
+
+</div><!-- /page two -->
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="three" data-theme="a">
+
+  <div data-role="content" data-theme="a">
+    <section>
+      <div data-role="content">
+        <a data-role="button">08:00</a>
+        <a data-role="button">09:00</a>
+        <a data-role="button">10:00</a>
+      </div>
+    </section>
+
+
+  </div><!-- /content -->
+
+</div><!-- /page two -->
+
+
+
+
+
+
+<p>Hah gay: <%= @membership.event_id %></p>
+
+<ul>
+  <li>Tänään: <%= Event.find(1).memberships.where(:dayslot => 1).count %></li>
+  <li>Huomenna: <%= Event.find(1).memberships.where(:dayslot => 2).count %></li>
+</ul>
 
 <%= render 'form' %>

@@ -1,4 +1,6 @@
 SupremeLaserArcticMoose::Application.routes.draw do
+  get "home_page/home"
+
   get "memberships/new"
 
   get "memberships/create"
@@ -14,6 +16,8 @@ SupremeLaserArcticMoose::Application.routes.draw do
   resources :events
 
   resources :memberships
+
+  root to: 'home_page#home'
 
   devise_for :users
 
