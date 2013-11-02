@@ -1,13 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Open+Sans+Condensed:300,700);
+
 body {
   background-color: #3bbef0;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Open Sans', verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -19,13 +20,13 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #fff;
+  text-decoration: none;
   &:visited {
-    color: #666;
+
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+
   }
 }
 
@@ -89,4 +90,27 @@ header nav ul {
         }
       }
 
+}
+
+// panel grid
+
+.fs_panel a {
+  float: left;
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-family: "Open Sans Condensed";
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3em 0 3em 0;
+  opacity: 1;
+}
+
+.huge {
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  font-weight: 300;
 }

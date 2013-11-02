@@ -3,6 +3,7 @@ var joinData = [];
 $(document).ready(function() {
     $(".fs_panel").hide();
     $(".fs_panel").first().show();
+    $(".panel_button").css('opacity', $(this).attr("opa"));
 
     $(".panel_button").bind("click", function() {
         joinData.push($(this).attr("value"));

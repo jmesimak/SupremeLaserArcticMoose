@@ -1,9 +1,9 @@
 
 
 <section id="one" class="fs_panel">
-  <a class="panel_button" href="#two" value="1">Tänään</a>
-  <a class="panel_button" href="#two" value="2">Huomenna</a>
-  <a class="panel_button" href="#two" value="3">Ylihuomenna</a>
+  <a class="panel_button" href="#two" value="1" opa="<%= (Event.find(@membership.event_id).memberships.where(:dayslot => 1).count.to_f / Event.find(@membership.event_id).memberships.count).round(1) %>">Tänään</a>
+  <a class="panel_button" href="#two" value="2" opa="<%= (Event.find(@membership.event_id).memberships.where(:dayslot => 2).count.to_f / Event.find(@membership.event_id).memberships.count).round(1) %>">Huomenna</a>
+  <a class="panel_button" href="#two" value="3" opa="<%= (Event.find(@membership.event_id).memberships.where(:dayslot => 3).count.to_f / Event.find(@membership.event_id).memberships.count).round(1) %>">Ylihuomenna</a>
 </section>
 
 <section id="two" class="fs_panel">
@@ -30,12 +30,9 @@
     <%= f.hidden_field :timeslot, :id => "timeslot", :value => "0" %>
 <% end %>
 
-
-
-<p>Hah gay: <%= @membership.event_id %></p>
-
-<ul>
-  <li>Tänään: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 1).count %></li>
-  <li>Huomenna: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 2).count %></li>
-</ul>
+<!--<ul>-->
+  <!--<li>Tänään: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 1).count %></li>-->
+  <!--<li>Huomenna: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 2).count %></li>-->
+  <!--<li>Ylihuomenna: <%= Event.find(@membership.event_id).memberships.where(:dayslot => 3).count %></li>-->
+<!--</ul>-->
 
